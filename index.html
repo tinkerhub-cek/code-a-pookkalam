@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-a-പൂക്കളം Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #d4af37; /* Gold */
+        --secondary-color: #006400; /* Dark Green */
+        --accent-color: #8b4513; /* Saddle Brown */
+        --background-color: #fdfdfd; /* Off-white */
+        --text-color: #2c2c2c;
+        --white: #fff;
+        --border-radius: 15px;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      header {
+        text-align: center;
+        padding: 2.5rem 1rem;
+        background: linear-gradient(135deg, var(--primary-color), #b5cb0d);
+        border-radius: var(--border-radius);
+        color: var(--white);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 3rem;
+      }
+
+      header h1 {
+        font-family: "Lobster", cursive;
+        font-size: 4rem;
+        margin: 0;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      main {
+        padding-top: 0;
+      }
+
+      section {
+        background-color: var(--white);
+        margin-bottom: 2.5rem;
+        padding: 2.5rem;
+        border-radius: var(--border-radius);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.07);
+        border-left: 7px solid var(--secondary-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 2.2rem;
+        color: var(--secondary-color);
+        font-weight: 700;
+        border-bottom: 3px solid var(--primary-color);
+        padding-bottom: 0.75rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+        color: var(--accent-color);
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+
+      ul,
+      ol {
+        padding-left: 25px;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+      }
+
+      .platform-options {
+        display: grid;
+        gap: 2.5rem;
+        margin-top: 2rem;
+      }
+
+      pre {
+        background-color: #fdfdfd;
+        border: 1px solid #eee;
+        padding: 1.5rem;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-size: 1rem;
+        white-space: pre-wrap;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      code {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+        color: #777;
+        font-size: 1.2rem;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-top: 2rem;
+        border-radius: var(--border-radius);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>🌸 Code-a-പൂക്കളം 🌸</h2>
+      </header>
+
+      <main>
+        <section id="welcome">
+          <h2>Is it Your First Time Participating?</h2>
+          <p>
+            If this is your first time participating in Code-a-പൂക്കളം, welcome!
+            Don't worry if you're new to coding or unsure about how to create
+            your own പൂക്കളം using code - we're here to help. This guide will
+            walk you through the basics and get you started.
+          </p>
+        </section>
+
+        <section id="platforms">
+          <h2>🎨 Use Any Language or Platform</h2>
+          <p>
+            In Code-a-പൂക്കളം, you are free to use any programming language or
+            platform that you are comfortable with to design your പൂക്കളം.
+            However, if you are a beginner, we recommend starting with one of
+            these beginner-friendly options:
+          </p>
+
+          <div class="platform-options">
+            <article id="p5js">
+              <h3>1. p5.js (JavaScript)</h3>
+              <p>
+                p5.js is a JavaScript library that makes it easy to create
+                graphics and interactive visuals in your browser. It's an
+                excellent choice for beginners.
+              </p>
+              <h4>Why p5.js?</h4>
+              <ul>
+                <li>
+                  🚀 Beginner-friendly — you can start with no coding
+                  experience.
+                </li>
+                <li>
+                  🌐 You can run your code directly in the browser — no need to
+                  install anything!
+                </li>
+                <li>📚 Tons of resources to help you along the way.</li>
+              </ul>
+              <h4>Getting Started with p5.js</h4>
+              <ol>
+                <li>
+                  <strong>Visit the p5.js Website:</strong> Go to the
+                  <a href="https://p5js.org/" target="_blank">p5.js website</a>
+                  to get familiar with what it is and explore its possibilities.
+                </li>
+                <li>
+                  <strong>Learn with Tutorials:</strong> Head over to the
+                  <a href="https://p5js.org/learn/" target="_blank"
+                    >p5.js tutorials</a
+                  >
+                  to start learning the basics, like drawing shapes, adding
+                  colors, and more. 🖍️
+                </li>
+                <li>
+                  <strong>Write Code in the Online Editor:</strong> You don't
+                  need to download any software! Just visit the
+                  <a href="https://editor.p5js.org/" target="_blank"
+                    >p5.js online editor</a
+                  >
+                  and start coding right away. 💻
+                </li>
+              </ol>
+              <p>Here's a simple example to get you started:</p>
+              <pre><code>function setup() {
+  createCanvas(400, 400);
+  background(255);  // Set the background color to white
+  ellipse(200, 200, 150, 150);  // Draw a circle
+}</code></pre>
+            </article>
+
+            <article id="python-turtle">
+              <h3>2. Python Turtle</h3>
+              <p>
+                Python Turtle is another beginner-friendly way to create
+                graphics with code. You can use simple commands to make a
+                virtual "turtle" move around the screen and draw shapes, making
+                it perfect for designing pookalam patterns.
+              </p>
+              <h4>Why Python Turtle?</h4>
+              <ul>
+                <li>
+                  ✨ Very simple to learn — you can start drawing with just a
+                  few lines of code.
+                </li>
+                <li>
+                  🎨 It's fun and visual, making it ideal for creative projects
+                  like this.
+                </li>
+              </ul>
+              <h4>Getting Started with Python Turtle</h4>
+              <ol>
+                <li>
+                  <strong>Use the Python Turtle Online Editor:</strong> No need
+                  to install Python! Just go to an
+                  <a href="https://www.online-python.com/" target="_blank"
+                    >online Python editor with Turtle support</a
+                  >
+                  and start coding. 🌟
+                </li>
+                <li>
+                  <strong>Learn the Basics with Tutorials:</strong> If you're
+                  new to Python or Turtle, check out a
+                  <a
+                    href="https://realpython.com/beginners-guide-python-turtle/"
+                    target="_blank"
+                    >Python Turtle tutorial</a
+                  >
+                  to get started. 📘
+                </li>
+              </ol>
+              <p>Try This Simple Code:</p>
+              <pre><code>import turtle
+
+pookalam = turtle.Turtle()
+pookalam.circle(100)  # Draw a circle with a radius of 100 units
+turtle.done()</code></pre>
+            </article>
+
+            <article id="joy">
+              <h3>3. Joy</h3>
+              <p>
+                Joy is a tiny creative coding library in Python, made by FOSS
+                United India. See how to use Joy:
+                <a
+                  href="https://github.com/fossunited/joy/blob/main/README.md"
+                  target="_blank"
+                  >Joy on GitHub</a
+                >.
+              </p>
+            </article>
+
+            <article id="html-css">
+              <h3>4. HTML + CSS</h3>
+              <p>
+                HTML (HyperText Markup Language) and CSS (Cascading Style
+                Sheets) are the fundamental building blocks of the web. You can
+                use them to create beautiful and intricate പൂക്കളം designs
+                directly in your browser.
+              </p>
+              <h4>Why HTML + CSS?</h4>
+              <ul>
+                <li>🧱 Foundational web technologies, great to learn.</li>
+                <li>
+                  🎨 Powerful styling capabilities with CSS for complex designs.
+                </li>
+                <li>🌐 Runs in any web browser without any setup.</li>
+              </ul>
+              <h4>Getting Started with HTML + CSS</h4>
+              <p>
+                You can create an `index.html` file and open it in your browser.
+                Here is a simple example of a പൂക്കളം layer using a single `div`
+                element.
+              </p>
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  .pookalam-layer {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="pookalam-layer"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            </article>
+          </div>
+        </section>
+
+        <section id="other-languages">
+          <h3>Other Languages</h3>
+          <p>
+            You are free to use any language that supports graphical output,
+            such as:
+          </p>
+          <ul>
+            <li>JavaScript (HTML5 Canvas)</li>
+            <li>Java (AWT/Swing)</li>
+            <li>C++ (Graphics libraries)</li>
+            <li>Processing</li>
+            <li>Or any other platform…</li>
+          </ul>
+        </section>
+
+        <section id="register">
+          <h2>How to Register on the TinkerHub App</h2>
+          <p>
+            For first-timers, here is how you can register for the event using
+            the TinkerHub app. It's the best way to stay updated and be part of
+            the community!
+          </p>
+          <ol>
+            <li>
+              <strong>Download the App:</strong> Get the TinkerHub app from the
+              Google Play Store or Apple App Store.
+            </li>
+            <li>
+              <strong>Create Your Account:</strong> Sign up with your Phone Number. If you already have an account, just log in.
+            </li>
+            <li>
+              <strong>About Vouch:</strong> Vouching is a community-making idea by TinkerHub, If you don't have vouch yet use skip option at top right corner.
+            </li>
+            <li>
+              <strong>Find the Event:</strong> Navigate to the 'Activities' or
+              you can see in the home screen itself as Features event.
+            </li>
+            <li>
+              <strong>Code-a-പൂക്കളം:</strong> Look for the
+              "Code-a-പൂക്കളം" event and tap on it.
+            </li>
+            <li>
+              <strong>Register:</strong> Click the 'Register' button
+              to confirm your participation.
+            </li>
+            <li>
+              <strong>You're All Set!</strong> Get ready to code your beautiful
+              പൂക്കളം and share it with the community.
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <section id="submission">
+        <h2>🔗 Submitting Your Code via GitHub</h2>
+        <p>
+          For this year’s competition, submissions are done by forking the
+          official TinkerHub CE Kallooppara repository and submitting your code
+          via a pull request. This makes it easier for us to review and
+          showcase all entries!
+        </p>
+        <ol>
+          <li>
+            <strong>Step 1: Fork the Official Repository</strong><br />
+            Go to the official competition repository:
+            <a
+              href="https://github.com/tinkerhub-cek/code-a-pookkalam"
+              target="_blank"
+              >https://github.com/tinkerhub-cek/code-a-pookkalam</a
+            ><br />
+            Click the "Fork" button at the top right to create your own copy.
+          </li>
+          <li>
+            <strong>Step 2: Add Your Code</strong><br />
+            In your forked repository, add your code and any images/screenshots
+            of your Pookkalam design. You can do this by uploading files
+            directly on GitHub or by cloning your fork and pushing changes from
+            your computer.
+          </li>
+          <li>
+            <strong>Step 3: Create a Pull Request</strong><br />
+            Once you’ve added your files, go back to the original repository and
+            click "Contribute" → "Open pull request".<br />
+            Give your pull request a meaningful title and description. Make sure
+            to include your name and a screenshot of your final output.
+          </li>
+          <li>
+            <strong>Step 4: Wait for Review</strong><br />
+            The TinkerHub CE Kallooppara team will review your submission and
+            merge it if everything looks good!
+          </li>
+            <li>
+                <strong>Step 5: Celebrate!</strong><br />
+                Once your pull request is merged, your code will be part of the
+                official repository, and you can proudly share your creation with
+                friends and family.
+            </li>
+        </ol>
+        <p>
+          Need help with forking or pull requests? Check out these guides:<br />
+          <a
+            href="https://docs.github.com/en/get-started/quickstart/fork-a-repo"
+            target="_blank"
+            >How to fork a repo</a
+          ><br />
+          <a
+            href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+            target="_blank"
+            >About pull requests</a
+          >
+        </p>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/jsdkkh"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <footer>
+        <p>Choose Your Platform and Let Your Creativity Flow! 🎨✨</p>
+        <p>Good luck, and we can't wait to see your pookalams! 🌸🚀</p>
+      </footer>
+    </div>
+  </body>
+</html>
